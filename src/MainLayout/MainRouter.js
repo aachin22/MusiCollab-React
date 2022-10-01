@@ -11,22 +11,22 @@ const MainRoute = () => {
   return (
     <Router>
       <Switch>
-        <Route path={`/`}>
+        <Route path={`/`} exact>
           <Homepage />
         </Route>
-        <Route path={`/sign-up`}>
+        <Route path={`/sign-up`} exact>
           <AccountCreate />
         </Route>
-        <Route path={`/new-project`}>
+        <Route path={`/new-project`} exact>
           <ProjectCreate />
         </Route>
-        <Route path={`/projects`}>
+        <Route path={`/projects`} exact>
           <ProjectList />
         </Route>
-        <Route path={`/project/:projectId`}>
+        <Route path={`/project/:projectId`} exact>
           <ProjectPage projectId />
         </Route>
-        <Route path={`/profile`}>
+        <Route path={`/profile`} exact>
           <ProfilePage />
         </Route>
       </Switch>

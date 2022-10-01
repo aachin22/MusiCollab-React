@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import axios from "axios";
 
 const AccountCreate = () => {
   const AccountForm = () => {
@@ -6,10 +7,31 @@ const AccountCreate = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
 
-    const handleSubmit = (e) => {
+    const createUser = () => {
+      axios({
+        method: "POST",
+        url:"http://localhost:5000/create_user",
+        headers: {
+          "Access-Control-Allow-Origin": "http://localhost:3000",
+          // 'Content-Type': 'application/x-www-form-urlencoded'
+        },
+      })
+      .then((response) => {
+        const res =response.data
+        console.log("success")
+      }).catch((error) => {
+        if (error.response) {
+          console.log("error")
+          console.log(error)
+          console.log(error.response)
+          console.log(error.response.status)
+          }
+      })}
+
+      const handleSubmit = (e) => {
       e.preventDefault();
-      console.log('submitted')
-      // Call be
+      console.log('submitted');
+      createUser();
     };
 
     return (

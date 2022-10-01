@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MusiCollab-React/static/css/main.e6c13ad2.css",
+    "main.js": "/MusiCollab-React/static/js/main.eb17f5a7.js",
+    "static/js/787.bfbf464b.chunk.js": "/MusiCollab-React/static/js/787.bfbf464b.chunk.js",
+    "index.html": "/MusiCollab-React/index.html",
+    "main.e6c13ad2.css.map": "/MusiCollab-React/static/css/main.e6c13ad2.css.map",
+    "main.eb17f5a7.js.map": "/MusiCollab-React/static/js/main.eb17f5a7.js.map",
+    "787.bfbf464b.chunk.js.map": "/MusiCollab-React/static/js/787.bfbf464b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.eb17f5a7.js"
+  ]
+}
